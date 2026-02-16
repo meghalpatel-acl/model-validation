@@ -7,8 +7,13 @@ on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
     branches: [ "main", "test" ]
+    # This ensures the pipeline ONLY runs if these files change
+    paths:
+      - 'model.tflite'
+      - 'test.csv'
   pull_request:
     branches: [ "main", "test" ]
+    
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -34,3 +39,6 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+      - name: Run logic
+        run: echo "Changes detected in f1 or f2. Running pipeline..."
