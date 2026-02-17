@@ -1,0 +1,8 @@
+{
+    "qa_pairs":[
+    {"question": "Authenticate user enrolment", "answer": "User enrolment process is started"},
+    {"question": "Authentiate user removal", "answer": "User removal process is started"},
+    {"question": "Delete all users", "answer": "Removal process of all registered users is started"},
+    {"question": "Delete administrator", "answer": "Admin removal process is started"}
+    ]
+}

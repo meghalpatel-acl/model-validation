@@ -1,0 +1,20 @@
+{
+    "qa_pairs":[
+    {"question": "OK, thank you.", "answer": "You're welcome"},
+    {"question": "what's the time?", "answer": "{time}"},
+    {"question": "hello", "answer": "Hello! How can I assist you today?"},
+    {"question": "how are you?", "answer": "I'm a virtual assistant, so I'm always ready to help. How can I assist you today?"},
+    {"question": "Register admin", "answer": "Start admin enrolment process"},
+    {"question": "Register user", "answer": "Starting enrolment process of user"},
+    {"question": "Remove user", "answer": "Starting removal process of user"},
+    {"question": "Start japanese response", "answer": "Loading japanese response"},
+    {
+        "question": "Tell me more about this demo?",
+        "answer": "I am an open-source demo created by Synaptics. I am running efficient speech-to-text and language models entirely on-device."
+    },
+    {
+        "question": "Where can I learn more about synaptics astra?",
+        "answer": "You can learn more at developer.synaptics.com."
+    }
+]
+}
