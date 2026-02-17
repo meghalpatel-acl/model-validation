@@ -1,1 +1,13 @@
-# Changes the requirement file...
+onnxruntime>=1.20.0,<1.21.0
+scikit-learn
+tqdm
+sounddevice
+silero-vad
+tokenizers
+pandas
+datetime
+soundfile
+tflite_runtime
+numpy==1.26.4
+llama-cpp-python 
+
