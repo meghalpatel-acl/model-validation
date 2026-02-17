@@ -9,8 +9,9 @@ on:
     branches: [ "main", "test" ]
     # This ensures the pipeline ONLY runs if these files change
     paths:
-      - 'model.tflite'
-      - 'test.csv'
+      - 'models/**'
+      - 'question_embeddings.csv'
+      - 'status.txt' 
   pull_request:
     branches: [ "main", "test" ]
     
