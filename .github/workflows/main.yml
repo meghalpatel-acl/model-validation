@@ -34,13 +34,33 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo Hello, world!
+        run: echo Building the new commit!
+        
+  test:
+    runs-on: self-hosted
+    needs: build
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+    steps: 
+      - uses: actions/checkout@v4
+
+      - name: Start test phase
+        run: echo "Starting test job..."
+
+      - name: Run embedding comparison script
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          echo "Running embedding comparison logic..."
+          python main.py
+          echo "Test job completed."
 
-      - name: Run logic
-        run: echo "Changes detected in f1 or f2. Running pipeline..."
+  deploy: 
+    runs-on: self-hosted
+    needs: test
+
+    steps:
+      - name: Deploy stage
+      - run: |
+          echo "All checks passed."
+          echo "Code is ready to deploy."
+      
+    
+  
