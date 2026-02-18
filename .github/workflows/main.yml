@@ -36,16 +36,18 @@ jobs:
       #  run: |
       #    sudo apt update
       #    sudo apt install -y python3-tflite-runtime
-          
+      - name: Start build
+        run:  echo "Starting build.."
+        
       # Runs a single command using the runners shell
-      - name: Create virtual environment
-        run: |
-          echo "Building the new commit!"
-          python3 -m venv venv --system-site-packages
-          source venv/bin/activate
-          python3 --version
-          pip install --upgrade pip 
-          pip install -r requirements.txt
+      #- name: Create virtual environment
+      #  run: |
+      #    echo "Building the new commit!"
+      #    python3 -m venv venv --system-site-packages
+      #    source venv/bin/activate
+      #    python3 --version
+      #    pip install --upgrade pip 
+      #    pip install -r requirements.txt
         
   test:
     runs-on: self-hosted
@@ -60,7 +62,11 @@ jobs:
       - name: Run embedding comparison script
         run: |
           echo "Running embedding comparison logic..."
+          python3 -m venv venv --system-site-packages
           source venv/bin/activate
+          python3 --version
+          pip install --upgrade pip 
+          pip install -r requirements.txt
           python3 main.py
           echo "Test job completed."
 
