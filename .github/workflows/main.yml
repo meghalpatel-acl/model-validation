@@ -10,8 +10,9 @@ on:
     # This ensures the pipeline ONLY runs if these files change
     paths:
       - 'models/**'
-      - 'question_embeddings.csv'
-      - 'status.txt' 
+      - 'data/question_embeddings.csv'
+      - 'status.txt'
+      - 'test_queries.json'
   pull_request:
     branches: [ "main", "test" ]
     
