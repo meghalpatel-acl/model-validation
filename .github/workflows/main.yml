@@ -32,11 +32,16 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
+      - name: Install system tflite runtime
+        run: |
+          sudo apt update
+          sudo apt install -y python3-tflite-runtime
+          
       # Runs a single command using the runners shell
       - name: Create virtual environment
         run: |
           echo "Building the new commit!"
-          python3 -m venv venv
+          python3 -m venv venv --system-site-packages
           source venv/bin/activate
           python3 --version
           pip install --upgrade pip 
