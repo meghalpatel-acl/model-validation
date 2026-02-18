@@ -7,7 +7,6 @@ tokenizers
 pandas
 datetime
 soundfile
-tflite_runtime
 numpy==1.26.4
 llama-cpp-python 
 

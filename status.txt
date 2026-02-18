@@ -5,6 +5,7 @@ Threshold: 0.8
 - How do I know if I need to clean the filters? | Similarity: 1.0000
 - What kind of cycles does the dishwasher have? | Similarity: 1.0000
 - How can I prevent hard water spots on my dishes? | Similarity: 1.0000
+- How do I load tall objects like pots and pans? | Similarity: 1.0000
 - Can I use regular dish soap in the dishwasher? | Similarity: 1.0000
 - What should I do if the dishwasher smells bad? | Similarity: 1.0000
 - How do I fix a leaking dishwasher? | Similarity: 1.0000
