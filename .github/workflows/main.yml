@@ -58,7 +58,7 @@ jobs:
 
     steps:
       - name: Deploy stage
-      - run: |
+        run: |
           echo "All checks passed."
           echo "Code is ready to deploy."
       
