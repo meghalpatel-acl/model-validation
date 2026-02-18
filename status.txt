@@ -13,5 +13,4 @@ Threshold: 0.8
 - How do I unload the dishwasher? | Similarity: 1.0000
 - How often should I run the dishwasher? | Similarity: 1.0000
 - What should I do if I hear unusual noises from the dishwasher? | Similarity: 1.0000
-- Can I run the dishwasher overnight? | Similarity: 1.0000
 - How do I load the dishwasher correctly? | Similarity: 1.0000
