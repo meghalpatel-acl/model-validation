@@ -34,7 +34,10 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo Building the new commit!
+        run: |
+          echo "Building the new commit!"
+          python3 --version
+          pip install -r requirements.txt
         
   test:
     runs-on: self-hosted
@@ -49,7 +52,6 @@ jobs:
       - name: Run embedding comparison script
         run: |
           echo "Running embedding comparison logic..."
-          python3 --version
           python3 main.py
           echo "Test job completed."
 
