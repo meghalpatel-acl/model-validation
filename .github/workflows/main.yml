@@ -32,10 +32,10 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
-      - name: Install system tflite runtime
-        run: |
-          sudo apt update
-          sudo apt install -y python3-tflite-runtime
+      #- name: Install system tflite runtime
+      #  run: |
+      #    sudo apt update
+      #    sudo apt install -y python3-tflite-runtime
           
       # Runs a single command using the runners shell
       - name: Create virtual environment
