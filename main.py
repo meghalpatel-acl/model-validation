@@ -85,13 +85,10 @@ def compare_embeddings(embedding1, embedding2):
 
     # Reshape embeddings for cosine similarity calculation
     embedding1 = np.array(embedding1).reshape(1, -1)
-    print(f"Embedding 1 shape: {embedding1.shape}")
     embedding2 = np.array(embedding2).reshape(1, -1)
-    print(f"Embedding 2 shape: {embedding2.shape}")
 
     # Calculate cosine similarity
     similarity = cosine_similarity(embedding1, embedding2)[0][0]
-    print(f"Cosine similarity matrix: {similarity}")
     return similarity
 
 def save_status(status: str):
