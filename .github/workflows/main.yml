@@ -79,7 +79,7 @@ jobs:
       - name: Deploy stage
         run: |
           echo "All checks passed."
-          echo "Code is ready to deploy."
+          echo "Code is ready to deploy." >> ~/Deployment_status.txt
       
     
   
